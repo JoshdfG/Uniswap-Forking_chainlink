@@ -21,7 +21,6 @@ contract SwapContract {
         uint indexed amountB
     );
 
-    // Constructor to set the ERC-20 tokens being swapped
     constructor() {
         dai = IERC20(0x3e622317f8C93f7328350cF0B56d9eD4C620C5d6);
 
