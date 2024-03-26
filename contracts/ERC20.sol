@@ -33,9 +33,6 @@ contract ERC20 is IERC20 {
         require(msg.sender == owner, "Only Onwer can perform this transaction");
     }
 
-    /**
-     * @dev See {IERC20-balanceOf}.
-     */
     function balanceOf(address account) public view returns (uint256) {
         return balances[account];
     }
