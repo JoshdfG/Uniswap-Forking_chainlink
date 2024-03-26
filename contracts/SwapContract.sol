@@ -43,8 +43,6 @@ contract SwapContract {
     }
 
     function swapEthDai(uint256 _amountA) external {
-        require(msg.sender != address(0), "address zero detected");
-
         require(_amountA > 0, "Can't exchange zero amount");
 
         require(weth.balanceOf(msg.sender) >= _amountA, "Insufficient Balance");
@@ -61,8 +59,6 @@ contract SwapContract {
     }
 
     function swapEthLink(uint256 _amountA) external {
-        require(msg.sender != address(0), "address zero detected");
-
         require(_amountA > 0, "Can't exchange zero amount");
 
         require(weth.balanceOf(msg.sender) >= _amountA, "Insufficient Balance");
@@ -79,8 +75,6 @@ contract SwapContract {
     }
 
     function swapLinkDai(uint256 _amountA) external {
-        require(msg.sender != address(0), "address zero detected");
-
         require(_amountA > 0, "Can't exchange zero amount");
 
         require(link.balanceOf(msg.sender) >= _amountA, "Insufficient Balance");
@@ -97,8 +91,6 @@ contract SwapContract {
     }
 
     function swapLinkEth(uint256 _amountA) external {
-        require(msg.sender != address(0), "address zero detected");
-
         require(_amountA > 0, "Can't exchange zero amount");
 
         require(link.balanceOf(msg.sender) >= _amountA, "Insufficient Balance");
@@ -115,8 +107,6 @@ contract SwapContract {
     }
 
     function swapDaiLink(uint256 _amountA) external {
-        require(msg.sender != address(0), "address zero detected");
-
         require(_amountA > 0, "Can't exchange zero amount");
 
         require(dai.balanceOf(msg.sender) >= _amountA, "Insufficient Balance");
@@ -133,8 +123,6 @@ contract SwapContract {
     }
 
     function swapDaiEth(uint256 _amountA) external {
-        require(msg.sender != address(0), "address zero detected");
-
         require(_amountA > 0, "Can't exchange zero amount");
 
         require(dai.balanceOf(msg.sender) >= _amountA, "Insufficient Balance");
